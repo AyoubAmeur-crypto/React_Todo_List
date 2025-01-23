@@ -1,0 +1,248 @@
+*{
+
+  box-sizing: border-box;
+  margin: 4px;
+  padding: 0;
+  font-family: "poppins","sans-serif";
+  
+
+  
+}
+
+body {
+
+  height: 100vh;
+  background-color: #eeeeee;
+}
+
+.objectif {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.start {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+
+}
+
+.formy {
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-block: 2px solid rgba(38, 38, 38, 0.629);
+  padding: 15px 0;
+
+}
+
+.formy label {
+
+  font-size: 14px;
+  color: rgb(46, 46, 46);
+}
+
+.btn {
+
+  padding: 2px 4px;
+}
+
+button {
+
+
+  background-color: rgb(62, 117, 255);
+  color: white;
+  border: transparent;
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+.firstRow button {
+
+  max-height: fit-content;
+}
+.title {
+
+  overflow-wrap: break-word;
+  max-width: 190px;
+}
+
+.card {
+
+
+  background-color: rgb(246, 246, 246);
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  min-width: 350px;
+  display: flex;
+  
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(36, 36, 36, 0.582);
+  
+  
+  padding: 10px;
+  transition: .4s ease-in-out;
+
+}
+
+.card input {
+
+  padding: 10px;
+  border: transparent;
+  border-radius: 10px;
+  
+}
+
+.card textarea {
+  
+  padding: 10px;
+  border: transparent;
+  border-radius: 10px;
+
+} 
+.btnn {
+
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.cardy {
+
+  background-color: white;
+  padding: 20px 10px;
+
+  border-radius: 10px;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  
+  max-width: 320px;
+  box-shadow: 0 0 20px rgba(74, 74, 74, 0.27);
+
+}
+
+
+.descripted {
+
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  overflow-wrap: break-word;
+  
+  color: rgba(33, 33, 33, 0.819);
+  margin-top: 10px;
+
+}
+
+.firstRow {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.delete {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  
+}
+
+.delete button {
+
+  background-color: red;
+
+  
+}
+
+.warning {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: red;
+  font-size: 12px;
+}
+
+.todo {
+
+  margin: 0;
+  padding: 0;
+}
+.todos {
+
+ display: grid;
+ grid-template-columns: repeat(5,minmax(300px,1fr));
+ padding: 0;
+ margin: 0;
+}
+
+.titely {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 26px;
+  margin-bottom: 10px;
+  border: 2px dotted black;
+  border-radius: 14px;
+}
+
+.complited {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.comp {
+
+  
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.objety {
+
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+
+}
+
+.delete .dony {
+
+  background-color: rgb(0, 177, 0);
+}
+
+@media(max-width:520px){
+
+  .todos{
+
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+
+}
